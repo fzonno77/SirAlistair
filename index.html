@@ -446,24 +446,6 @@
             color: var(--secondary); 
             margin-bottom: 12px; 
             font-size: 20px; 
-        }
-        .mondo-card-chiusura {
-            cursor: default !important;
-            border-style: dashed;
-            background: #FFF9EF;
-        }
-        .mondo-card-chiusura:hover {
-            transform: none;
-            box-shadow: none;
-            border-color: #F0EAE1;
-            background: #FFF9EF;
-        }
-        .world-bridge {
-            max-width: 360px;
-            margin: 0 auto 18px;
-            color: #554637;
-            font-size: 15px;
-            line-height: 1.55;
         } 
 
         /* SEZIONE FOOTER / "VUOI VIVERE TUTTA L'AVVENTURA?" */ 
@@ -1055,7 +1037,7 @@
                 </div>
                 <div class="hero-video-wrapper">
                     <div class="video-box" aria-label="Trailer di Sir Alistair">
-                        
+                        <div class="video-label">▶ Guarda un assaggio dell'avventura</div>
                         <video controls playsinline autoplay muted loop preload="auto">
                             <source src="video/video.mp4" type="video/mp4"> Il tuo browser non supporta la riproduzione di questo video. 
                         </video>
@@ -1155,13 +1137,12 @@
                     <h3>I Mari dei Pirati</h3>
                     <p>In un epico e ironico crossover insulare che metterà a dura prova il suo self-control.</p>
                 </div>
-                <div class="mondo-card mondo-card-chiusura" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div class="mondo-card" style="cursor: default; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
                     <div style="width: 320px; height: 320px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
                         <img src="images/immagine_06.png" alt="Jolly" style="max-width: 100%; max-height: 100%; object-fit: contain;" />
                     </div>
-                    <h3>...e tanto altro ancora!</h3>
-                    <p class="world-bridge">Questi sono solo alcuni dei mondi che aspettano Sir Alistair. Per vivere tutta l’avventura, c’è ancora una strada da seguire.</p>
-                    <p style="text-align: center;"><a href="https://amzn.eu/d/01tGbdn9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Scopri il libro su Amazon</a></p>
+                    <h3>Il viaggio continua...</h3>
+<br><p style="text-align: center;"><a href="https://amzn.eu/d/01tGbdn9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acquista il libro</a></p>
 
                 </div>
             </div>
@@ -1245,7 +1226,7 @@
                 <div class="autore-text">
                     <h2>Chi ha dato vita a Sir Alistair?</h2>
                     <p>Ciao, sono Francesco! La storia di Sir Alistair ha un'origine speciale: nasce da alcuni racconti che avevo scritto da piccolino, quando ero un ragazzino che sognava avventure tra i banchi di scuola. Qualche tempo fa, li ho ritrovati per caso nel vecchio cassetto dei miei genitori. Rileggerli mi ha fatto capire che quella stessa magia poteva parlare ai ragazzi di oggi.</p>
-                    <p>Ho scelto di mantenere intatto lo spirito di quei racconti, trasformandoli oggi in un libro per i ragazzi. Credo che una storia nata dall'immaginazione di quando ero giovane possa ancora parlare ai bambini di oggi: con avventura, ironia e la libertà di immaginare una strada diversa da quella che gli altri hanno già scelto per loro. Sir Alistair nasce dall’idea che una storia possa dare ai ragazzi lo spazio per immaginare una strada diversa da quella che gli altri hanno già scelto per loro.</p>
+                    <p>Ho scelto di mantenere intatto lo spirito di quei racconti, trasformandoli oggi in un libro per i ragazzi. Credo che una storia nata dall'immaginazione di quando ero giovane possa ancora parlare ai bambini di oggi: con avventura, ironia e la libertà di immaginare una strada diversa da quella che gli altri hanno già scelto per loro. Sir Alistair non è solo una storia, è il mio modo di dimostrare che la voce dei giovani, quando è autentica, ha una forza capace di abbattere ogni barriera e persino quella tra il mondo reale e quello dei libri.</p>
                 </div>
             </div>
         </div>
@@ -1258,7 +1239,7 @@
         </a>
         <div class="footer-grid">
             <div class="footer-content-box">
-                <h2>Hai conosciuto Sir Alistair. Ora è il momento di seguirlo.</h2>
+                <h2>Vuoi scoprire come finisce?</h2>
                 <p>Hai conosciuto Sir Alistair. Hai scoperto perché è scappato dalla sua storia. Ora puoi seguirlo fino alla fine della sua incredibile avventura.<br><strong>Disponibile su Amazon in versione cartacea ed ebook.</strong></p>
             </div>
         </div>
@@ -1269,7 +1250,7 @@
         <div class="container">
             <div class="contatti-header">
                 <h2>Contatta l'Autore</h2>
-                <p>Per scuole, insegnanti, educatori e ordini di gruppo: invia un messaggio direttamente da qui. Francesco ti risponderà al più presto.</p>
+                <p>Sei una maestra, un educatore o vuoi informazioni per ordini di gruppo o per offerte? Invia un messaggio direttamente da qui. Francesco ti risponderà al più presto.</p>
             </div>
             <form id="contact-form" class="form-contatto">
                 <div class="form-group">
