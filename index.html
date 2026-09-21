@@ -203,99 +203,6 @@
             text-align: justify;
         }        
 
-        .hero-kicker {
-            display: inline-block;
-            margin-bottom: 12px;
-            padding: 6px 12px;
-            border-radius: 999px;
-            background: #FFF0D4;
-            color: #8F3F30;
-            font-size: 13px;
-            font-weight: 800;
-            letter-spacing: .8px;
-        }
-        .hero-parent-promise {
-            padding: 16px 18px;
-            margin-top: -12px;
-            margin-bottom: 25px !important;
-            background: rgba(255,255,255,.72);
-            border-left: 4px solid var(--primary);
-            border-radius: 0 14px 14px 0;
-        }
-        .video-label {
-            position: absolute;
-            left: 12px;
-            right: 12px;
-            top: 12px;
-            z-index: 2;
-            padding: 9px 12px;
-            border-radius: 10px;
-            background: rgba(44,30,17,.82);
-            color: #fff;
-            text-align: center;
-            font-size: 13px;
-            font-weight: 700;
-            pointer-events: none;
-        }
-
-        /* PERCHE' POTREBBE ESSERE IL LIBRO GIUSTO */
-        .perche-section {
-            padding: 78px 0 82px;
-            background: #fff;
-            border-top: 1px solid #F0EAE1;
-            border-bottom: 1px solid #F0EAE1;
-        }
-        .perche-intro {
-            max-width: 760px;
-            margin: 0 auto 38px;
-            text-align: center;
-        }
-        .perche-kicker {
-            color: #8F3F30;
-            font-size: 13px;
-            font-weight: 800;
-            letter-spacing: 1.4px;
-            margin-bottom: 8px;
-        }
-        .perche-intro h2 {
-            font-size: 34px;
-            margin-bottom: 12px;
-        }
-        .perche-intro p {
-            color: #554637;
-            font-size: 17px;
-            max-width: 680px;
-            margin: 0 auto;
-        }
-        .perche-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
-        .perche-card {
-            padding: 30px 25px;
-            background: #FAF6EE;
-            border: 1px solid #EDE3D7;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(44,30,17,.05);
-        }
-        .perche-icon { font-size: 34px; margin-bottom: 12px; }
-        .perche-card h3 { font-size: 21px; margin-bottom: 10px; color: var(--dark); }
-        .perche-card p { font-size: 15.5px; color: #554637; line-height: 1.65; }
-        .prologo-bridge {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 18px;
-            flex-wrap: wrap;
-            margin-top: 35px;
-            padding-top: 25px;
-            border-top: 1px solid #E8DED2;
-            text-align: center;
-        }
-        .prologo-bridge strong { font-size: 17px; }
-
         /* HERO SECTION */ 
         .hero { 
             padding: 60px 0; 
@@ -898,20 +805,6 @@
             .hero-buttons .btn { width: 100%; }
         }
 
-        @media (max-width: 800px) {
-            .perche-grid { grid-template-columns: 1fr; max-width: 620px; margin: 0 auto; }
-            .perche-section { padding: 60px 0; }
-        }
-        @media (max-width: 576px) {
-            .hero-parent-promise { text-align: left; }
-            .hero-buttons { gap: 10px; }
-            .perche-intro h2 { font-size: 29px; }
-            .perche-intro p { font-size: 16px; }
-            .prologo-bridge { gap: 12px; }
-            .prologo-bridge .btn { width: 100%; }
-            .video-label { font-size: 12px; }
-        }
-
         /* SEZIONE "IL CUORE DELLA STORIA" - sfondo illustrato + riquadro */
         .cuore-storia-section {
             position: relative;
@@ -1012,32 +905,42 @@
                 line-height: 1.65;
             }
         }
-    </style>
+    
+        .destinatari-section{padding:54px 0 58px;background:var(--light-bg);border-top:1px solid #EFE8DC;border-bottom:1px solid #EFE8DC}
+        .destinatari-header{text-align:center;max-width:820px;margin:0 auto 28px}
+        .destinatari-kicker{font-size:13px;font-weight:700;letter-spacing:1.5px;color:var(--secondary);margin-bottom:8px}
+        .destinatari-header h2{font-size:30px;color:var(--dark);margin-bottom:9px}
+        .destinatari-header p{font-size:16px;color:#554637;margin:0}
+        .destinatari-links{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+        .destinatari-link{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:18px;text-decoration:none;color:var(--dark);background:rgba(255,255,255,.72);border:1px solid #E9DDCB;border-radius:14px;transition:var(--transition)}
+        .destinatari-link:hover,.destinatari-link:focus-visible{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#D9C7AE;outline:none}
+        .destinatari-icon{font-size:25px;line-height:1}
+        .destinatari-link strong{display:block;font-size:17px;margin-bottom:4px}
+        .destinatari-link small{display:block;font-size:13.5px;line-height:1.45;color:#665748}
+        .destinatari-arrow{font-size:22px;color:var(--secondary);font-weight:700}
+        @media(max-width:800px){.destinatari-links{grid-template-columns:1fr;max-width:620px}.destinatari-header h2{font-size:27px}.destinatari-section{padding:45px 20px}}
+</style>
 </head>
-<body id="top">
+<body>
     <div class="lang-switch" aria-label="Seleziona lingua"><a href="index.html" aria-current="page">IT</a><span>|</span><a href="index-en.html">EN</a></div>
     <header>
         <div class="container">
-            <a href="#top" class="logo">🛡️ <strong>Sir <span>Alistair</span> e la battaglia dei bignè</strong></a>
+            <a href="#" class="logo">🛡️ <strong>Sir <span>Alistair</span> e la battaglia dei bignè</strong></a>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
             <div class="hero-grid">
-                <div class="hero-text">
-                    <div class="hero-kicker">UNA STORIA PER 8–12 ANNI</div>
+                <div class="hero-text" style="text-align: justify;">
                     <h1>E se l'eroe del tuo libro fantasy preferito decidesse di mollare la spada... per diventare un pasticciere?</h1>
-                    <p>Un'avventura fantastica e ironica tra mondi letterari e incontri sorprendenti. Sir Alistair si sente fuori posto nel ruolo che gli altri hanno scelto per lui e decide di cambiare strada.</p>
-                    <p class="hero-parent-promise"><strong>Perché potrebbe essere il libro giusto?</strong> Per un bambino che ama ridere, immaginare mondi impossibili e lasciarsi sorprendere da una storia fuori dal comune.</p>
+                    <p style="text-align: justify;">Un'avventura fantastica e ironica per bambini dagli 8 ai 12 anni, tra mondi letterari, incontri sorprendenti e un sogno da inseguire.<br> Scopri il viaggio di Sir Alistair, un cavaliere molto particolare che si sente fuori posto nel ruolo che gli altri hanno scelto per lui e decide di cercare la propria strada.</p>
                     <div class="hero-buttons">
-                        <a href="#perche" class="btn btn-secondary">Perché potrebbe piacergli</a>
                         <a href="https://amzn.eu/d/01tGbdn9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Scopri il libro su Amazon</a>
                     </div>
                 </div>
                 <div class="hero-video-wrapper">
-                    <div class="video-box" aria-label="Trailer di Sir Alistair">
-                        <div class="video-label">▶ Guarda un assaggio dell'avventura</div>
+                    <div class="video-box">
                         <video controls playsinline autoplay muted loop preload="auto">
                             <source src="video/video.mp4" type="video/mp4"> Il tuo browser non supporta la riproduzione di questo video. 
                         </video>
@@ -1047,50 +950,19 @@
         </div>
     </section>
 
-    <section id="perche" class="perche-section" aria-labelledby="perche-title">
-        <div class="container">
-            <div class="perche-intro">
-                <div class="perche-kicker">PRIMA DI SCEGLIERE UN LIBRO</div>
-                <h2 id="perche-title">Potrebbe essere il libro giusto se...</h2>
-                <p>non cerchi soltanto un'altra avventura fantasy, ma una storia capace di sorprendere, far ridere e lasciare la voglia di sapere cosa succede dopo.</p>
-            </div>
-            <div class="perche-grid">
-                <article class="perche-card">
-                    <div class="perche-icon">🗺️</div>
-                    <h3>Ama le avventure che sorprendono</h3>
-                    <p>Sir Alistair fugge dal proprio libro e attraversa generi letterari diversi. Ogni tappa cambia le regole del gioco.</p>
-                </article>
-                <article class="perche-card">
-                    <div class="perche-icon">💭</div>
-                    <h3>Non vuole essere quello che tutti si aspettano</h3>
-                    <p>Alistair non vuole essere l'eroe che tutti si aspettano. Ma cambiare strada non sarà così semplice come immagina.</p>
-                </article>
-                <article class="perche-card">
-                    <div class="perche-icon">✨</div>
-                    <h3>Vorrebbe fare qualcosa di completamente diverso</h3>
-                    <p>La pasticceria sembra un sogno assurdo per un cavaliere. Ma per Alistair potrebbe essere proprio l'inizio di qualcosa di nuovo.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
     <section class="prologo-sezione" style="padding: 60px 0; background-color: #fff; font-family: 'Segoe UI', sans-serif;">
         <div style="max-width: 800px; margin: 0 auto; padding: 0 20px; line-height: 1.8; color: #333; text-align: justify">
-            <h2 style="font-size: 32px; color: #222; text-align: center; margin-bottom: 30px;">IL PROLOGO - Il Segreto di Sir Alistair</h2>
+            <h2 style="font-size: 32px; color: #222; text-align: center; margin-bottom: 30px;">IL PROLOGO - Il Segreto di Sir Alistair: Una storia per chi ha ancora un sogno da inseguire</h2>
             <p style="font-size: 16px; margin-bottom: 15px;">Ogni favola che si rispetti inizia con un cavaliere senza macchia e senza paura, pronto a combattere draghi sputafuoco per proteggere il regno. E per molto tempo, la storia di Sir Alistair è stata esattamente così. Pagina dopo pagina, capitolo dopo capitolo, sempre la stessa routine: lucida l'armatura, monta in sella, affronta il mostro, salva tutti, ricomincia da capo.</p>
             <p style="font-size: 16px; margin-bottom: 15px;">Ma dietro quell'elmo lucente, Sir Alistair nascondeva un segreto. <strong style="color: #c0392b;">Si era ufficialmente scocciato.</strong></p>
             <p style="font-size: 16px; margin-bottom: 15px;">Si era stancato del peso di quell'armatura che cigolava a ogni passo, delle principesse che strillavano troppo e, ammettiamolo, non ne poteva più di combattere. Sir Alistair non voleva più essere l'eroe perfetto di una storia già scritta. Lui aveva un sogno segreto, un sogno profumato di zucchero velato, cannella e cioccolato fuso: voleva diventare un pasticcere!</p>
             <p style="font-size: 16px; margin-bottom: 15px;">Così, una notte, mentre l'autore del libro dormiva profondamente e i lettori avevano chiuso la pagina, Sir Alistair prese una decisione incredibile. Posò la spada, si tolse i guanti di ferro e decise di fare l'unica cosa che un personaggio della sua importanza non avrebbe mai dovuto fare...</p>
             <p style="font-size: 18px; font-weight: bold; text-align: center; margin: 25px 0; color: #222;">Decise di scappare via dal suo stesso libro per inseguire la felicità.</p>
             <p style="font-size: 16px; margin-bottom: 30px;">Ma come si fa a uscire da una storia? E cosa succede se, proprio sulla strada verso la libertà, il nostro cavaliere pasticcere dovesse imbattersi in un drago che, invece di sputare fuoco, nasconde un segreto grande quanto il suo?</p>
-            <div class="prologo-bridge">
-                <strong>Vuoi sapere dove finisce la fuga?</strong>
-                <a href="#trama" class="btn btn-secondary">Entra nella storia</a>
-            </div>
         </div>
     </section>
 
-    <section id="trama" class="trama">
+    <section class="trama">
         <div class="container">
             <h2 class="section-title">LA TRAMA - Un buco bianco nella pagina... Dov'è finito l'eroe?</h2>
             <div class="trama-text">
@@ -1099,7 +971,7 @@
             </div>
             <div class="mondi-istruzione" role="note" aria-label="Come esplorare i mondi letterari">
                 <span class="mondi-istruzione-icon">👆</span>
-                <div><strong>Apri una porta sull'avventura</strong><br><span>Clicca su un'immagine per entrare in quel mondo e scoprire un dettaglio della storia.</span></div>
+                <div><strong>Esplora i mondi letterari</strong><br><span>Clicca sulle immagini per entrare in ogni mondo e scoprire i dettagli dell’avventura.</span></div>
             </div>
             <div class="mondi-grid">
                 <div class="mondo-card" tabindex="0" role="button" aria-label="Apri l'anteprima del capitolo I Ricettari" onclick="openChapterModal('ricettari')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openChapterModal('ricettari');}">
@@ -1141,7 +1013,7 @@
                     <div style="width: 320px; height: 320px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
                         <img src="images/immagine_06.png" alt="Jolly" style="max-width: 100%; max-height: 100%; object-fit: contain;" />
                     </div>
-                    <h3>Il viaggio continua...</h3>
+                    <h3>...e tanto altro ancora!</h3>
 <br><p style="text-align: center;"><a href="https://amzn.eu/d/01tGbdn9" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acquista il libro</a></p>
 
                 </div>
@@ -1162,14 +1034,14 @@
                 <div class="cuore-storia-kicker">IL CUORE DELLA STORIA</div>
                 <h2>Quando non riesci a essere ciò che gli altri si aspettano da te</h2>
                 <p>Sir Alistair scopre che non è facile sentirsi nel posto giusto quando il mondo intorno a te sembra avere già deciso chi dovresti essere.</p>
-                <p>E quando inizi a sentirti fuori posto, anche il sogno che hai dentro può sembrare impossibile.</p>
+                <p>E quando inizi a sentirti diverso, fuori posto o inadeguato, anche il tuo stesso sogno può sembrare impossibile.</p>
                 <p>È proprio da qui che comincia la sua fuga.</p>
                 <div class="cuore-emphasis">
                     <p>Ma il viaggio che lo aspetta gli farà scoprire qualcosa di importante: <strong>trovare la propria strada non significa necessariamente percorrerla da soli.</strong></p>
                 </div>
-                <p>E lungo il cammino, incontrare qualcuno che crede in te può fare la differenza.</p>
+                <p>A volte abbiamo bisogno di qualcuno che ci ascolti, che creda in noi e che ci aiuti a trovare il coraggio di capire chi vogliamo diventare.</p>
                 <p class="cuore-leo"><strong>E Leo avrà un ruolo importante in questo viaggio.</strong></p>
-                <p class="cuore-final">Per i bambini è un'avventura da vivere. Per chi li accompagna, forse è anche una storia da continuare a raccontare insieme, una volta chiuso il libro.</p>
+                <p class="cuore-final">Una storia per i bambini, ma anche per chi li accompagna mentre imparano a scoprire la propria strada.</p>
             </div>
         </div>
     </section>
@@ -1182,10 +1054,9 @@
             </div>
             <div class="missione-contenuto">
                 <div class="missione-icona">&#9876;&#65039;</div>
-                <div class="missione-kicker">DOPO LA LETTURA, L'AVVENTURA CONTINUA</div>
                 <h2>ADESSO TOCCA A TE</h2>
-                <h3>Sir Alistair ha iniziato la sua avventura.<br><span>Ora tocca a te.</span></h3>
-                <p class="missione-intro">Nel mondo di <strong>Sir Alistair</strong>, anche un'idea che sembra impossibile può diventare l'inizio di una grande avventura. Nella <strong>Missione di Sir Alistair</strong> puoi trasformare la tua fantasia in una storia, in un disegno o in un'avventura tutta da raccontare.</p>
+                <h3>Sir Alistair ha inseguito il suo sogno.<br><span>Qual è il tuo?</span></h3>
+                <p class="missione-intro">Nel mondo di <strong>Sir Alistair</strong>, ogni sogno può diventare l'inizio di una grande avventura. Nella <strong>Missione di Sir Alistair</strong> puoi trasformare la tua fantasia in una storia, in un disegno o in un'avventura tutta da raccontare.</p>
                 <p class="missione-cavaliere">Diventa anche tu un <strong>Piccolo Cavaliere</strong> e scegli la tua prova!</p>
                 
                 <div class="missione-prove">
@@ -1207,12 +1078,40 @@
                 </div>
 
                 <div class="missione-frase">
-                    <p><strong>Ogni grande avventura comincia da una piccola idea.</strong></p>
-                    <p>E diventa ancora più bella quando c'è qualcuno con cui condividerla.</p>
+                    <p><strong>Non serve essere grandi per avere un grande sogno.</strong></p>
+                    <p>Serve solo avere il coraggio di iniziare.</p>
                 </div>
 
                 <a href="missione_sir_alistair_FORMsubmit.html" class="btn-missione">&#9876;&#65039; PARTECIPA ALLA MISSIONE</a>
                 <p class="missione-nota">Una storia. Un disegno. Un sogno da raccontare.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE: PER CHI ACCOMPAGNA QUESTA AVVENTURA -->
+    <section class="destinatari-section" id="destinatari">
+        <div class="container">
+            <div class="destinatari-header">
+                <div class="destinatari-kicker">PER CHI ACCOMPAGNA I LETTORI</div>
+                <h2>Sir Alistair può entrare in modi diversi nella tua realtà</h2>
+                <p>Se sei un genitore, un insegnante o lavori con i libri, qui trovi il percorso più utile per te.</p>
+            </div>
+            <div class="destinatari-links">
+                <a class="destinatari-link" href="#cuore-storia">
+                    <span class="destinatari-icon">👨‍👩‍👧</span>
+                    <span><strong>Genitori</strong><small>La storia, il suo significato e il viaggio di un lettore dagli 8 ai 12 anni.</small></span>
+                    <span class="destinatari-arrow">→</span>
+                </a>
+                <a class="destinatari-link" href="#missione-sir-alistair">
+                    <span class="destinatari-icon">👩‍🏫</span>
+                    <span><strong>Insegnanti ed educatori</strong><small>La Missione di Sir Alistair e le occasioni per coinvolgere i ragazzi.</small></span>
+                    <span class="destinatari-arrow">→</span>
+                </a>
+                <a class="destinatari-link" href="#contatti">
+                    <span class="destinatari-icon">📚</span>
+                    <span><strong>Librerie e biblioteche</strong><small>Informazioni sul progetto e contatto diretto con l'autore.</small></span>
+                    <span class="destinatari-arrow">→</span>
+                </a>
             </div>
         </div>
     </section>
@@ -1226,7 +1125,7 @@
                 <div class="autore-text">
                     <h2>Chi ha dato vita a Sir Alistair?</h2>
                     <p>Ciao, sono Francesco! La storia di Sir Alistair ha un'origine speciale: nasce da alcuni racconti che avevo scritto da piccolino, quando ero un ragazzino che sognava avventure tra i banchi di scuola. Qualche tempo fa, li ho ritrovati per caso nel vecchio cassetto dei miei genitori. Rileggerli mi ha fatto capire che quella stessa magia poteva parlare ai ragazzi di oggi.</p>
-                    <p>Ho scelto di mantenere intatto lo spirito di quei racconti, trasformandoli oggi in un libro per i ragazzi. Dentro ci sono l'avventura, l'ironia e quella libertà di immaginare una strada diversa che avevo già messo nelle storie di allora.</p>
+                    <p>Ho scelto di mantenere intatto lo spirito di quei racconti, trasformandoli in un libro scritto da un ragazzo per i ragazzi. Credo fermamente che non ci sia nessuno migliore di chi ha appena vissuto l'età della scoperta per capire, emozionare e coinvolgere i propri coetanei. Sir Alistair non è solo una storia, è il mio modo di dimostrare che la voce dei giovani, quando è autentica, ha una forza capace di abbattere ogni barriera e persino quella tra il mondo reale e quello dei libri.</p>
                 </div>
             </div>
         </div>
@@ -1235,18 +1134,18 @@
     <!-- FOOTER / "VUOI VIVERE TUTTA L'AVVENTURA?" (Posizionato PRIMA dei contatti) -->
     <footer>
         <a class="footer-full-link" href="https://amzn.eu/d/01tGbdn9" target="_blank" rel="noopener noreferrer" aria-label="Scopri e acquista Sir Alistair su Amazon">
-            <span>👆 Scopri come continua l'avventura su Amazon</span>
+            <span>👆 Clicca qui per scoprire il libro su Amazon</span>
         </a>
         <div class="footer-grid">
             <div class="footer-content-box">
-                <h2>Vuoi scoprire come finisce?</h2>
-                <p>Hai conosciuto Sir Alistair. Hai scoperto perché è scappato dalla sua storia. Ora puoi seguirlo fino alla fine della sua incredibile avventura.<br><strong>Disponibile su Amazon in versione cartacea ed ebook.</strong></p>
+                <h2>Vuoi vivere tutta l'avventura?</h2>
+                <p>Hai conosciuto Sir Alistair. Hai scoperto il suo sogno. Ora puoi seguirlo fino alla fine della sua incredibile avventura.<br> "Sir Alistair e la battaglia dei bignè" è disponibile su Amazon in versione cartacea ed ebook.</p>
             </div>
         </div>
     </footer>
 
     <!-- SEZIONE CONTATTI (Posizionata DOPO la sezione Amazon) -->
-    <section class="contatti">
+    <section class="contatti" id="contatti">
         <div class="container">
             <div class="contatti-header">
                 <h2>Contatta l'Autore</h2>
